@@ -1,0 +1,52 @@
+.seem {
+    margin: 0 40px 90px;
+}
+
+.seem__like {
+    color: $main-color;
+    font-size: 80px;
+    line-height: 100px;
+    margin-bottom: 56px;
+    transition: .5s;
+}
+
+.seem__like:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px $main-color;
+}
+
+// анимированая кнопка
+.talk {
+    position: relative;
+    display: inline-block;
+    padding: 10px 17px;
+    // color: white;
+    color: $main-color;
+    font-size: 20px;
+    line-height: 28.8px;
+    border-radius: 3px;
+    border: 2px solid $main-color;
+    background: transparent;
+    z-index: 1;
+}
+.talk::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: red;
+    // background: rgb(49, 3, 255);
+    background: #d35400;
+    z-index:-1;
+    transition: .8s;
+    // opacity: .3;
+}
+.talk::before{
+    transform: scaleX(1);
+}
+.talk:hover::before{
+transform: scaleX(0);
+}
+

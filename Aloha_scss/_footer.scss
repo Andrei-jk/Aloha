@@ -1,0 +1,38 @@
+.footer{
+    margin: 190px 40px 100px;
+}
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__webflow{
+    min-width: 192px;
+}
+.footer__aloha{
+    color:$main-color;
+        font-size: 18px;
+        line-height: 28.8px;
+}
+.footer__power{
+    color: $main-color;
+        font-size: 18px;
+        line-height: 28.8px;
+        margin-bottom: 83px;
+}
+.footer__general{
+    min-width: 620px;
+    display: flex;
+    // justify-content: space-between;
+}
+.footer__information{
+    padding-right: 179px;
+}
+.footer__homework{
+    padding-right: 179px;
+}
+.footer__li{
+    color: $main-color;
+        font-size: 18px;
+        line-height: 28.8px;
+}

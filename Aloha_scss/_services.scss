@@ -1,0 +1,57 @@
+.services {
+    max-width: 1320px;
+    margin: 0 40px 90px;
+}
+
+.services-row {
+    // max-width: 1320px;
+    display: flex;
+    column-gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-services {
+    max-width: 630px;
+}
+
+.my {
+    width: 601px;
+    margin-bottom: 45px;
+    font-size: 38px;
+    color: $main-color ;
+    line-height: 44px;
+    transition: .5s;
+}
+// прозрачный текст при наведении
+.my:hover {
+    -webkit-text-stroke: 1px $main-color;
+    color: transparent;
+}
+
+.learn {
+    position: relative;
+    display: inline-block;
+    padding: 11px 17px 10px;
+    color: $main-color;
+    font-size: 20px;
+    line-height: 28.8px;
+    border-radius: 3px;
+    border: 2px solid $main-color;
+    transition: background-color, color, border, 0.5s ease;
+}
+
+.learn:hover {
+    background-color: $main-color;
+    color: $body-color;
+    border: 2px solid $body-color;
+}
+
+.learn:active {
+    top: 2px;
+}
+
+.img-second img {
+    border-radius: 16px;
+    object-fit: contain;
+}

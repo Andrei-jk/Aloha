@@ -1,0 +1,81 @@
+// вся затемненная модалная область
+.modal-area {
+  margin-top: 48px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(35, 199, 14, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  overflow-y: auto;
+  overflow-x: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s, visibility 0.8s;
+}
+
+//само модальное окно
+.modal__window {
+  position: relative;
+  z-index: 5;
+  margin-top: 250px;
+  max-width: 800px;
+  padding: 35px;
+  background-color: rgb(3, 255, 150);
+  border: 30px solid rgb(3, 95, 30);
+  // уменьшаем окно
+  transform: scale(0);
+  // анимируем свойство transform
+  transition: transform 1.6s;
+}
+
+// класс для открытия окна
+.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+// анимируем увеличивая окно
+.modal-area .open .modal__window {
+  // увеличиваем окно
+  transform: scale(1);
+}
+
+// кнопка закрытия окна
+.triangle-up {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid rgba(35, 199, 14);
+}
+.triangle-up:hover {
+  transform: rotate(180deg);
+  transition: transform 0.6s ease;
+}
+// заголовок
+.zagolovok-window {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: transparent;
+  background-image: url(https://media4.giphy.com/media/emdlFGZyqmmk723pal/giphy.gif?cid=ecf05e4799duulfo8urbcjcs4t5hrxvcpdzjfi8h9gi3jslo&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+  // !ВАЖНО = надо копировать ССЫЛКУ НА ИЗОБРАЖЕНИЕ
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.close-area {
+  // чтобы popup можно было закрыть в любом месте экрана растянем ссылку на весь экран и тогда ссылкой будет вся area
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

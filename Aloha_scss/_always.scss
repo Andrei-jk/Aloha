@@ -1,0 +1,60 @@
+.always {
+    max-width: 1320px;
+    margin: 0 40px 90px;
+}
+
+.always-row {
+    // max-width: 1320px;
+    display: flex;
+    column-gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.always-content {
+    max-width: 630px;
+}
+
+
+.follow {
+    width: 601px;
+    margin-bottom: 45px;
+    font-size: 38px;
+    color: $main-color;
+    font-weight: 400;
+    line-height: 44px;
+    transition: .5s;
+}
+
+// прозрачный текст при наведении
+.follow:hover {
+    -webkit-text-stroke: 1px $main-color;
+    color: transparent;
+}
+
+.aloha__mail {
+    position: relative;
+    display: inline-block;
+    padding: 10px 17px;
+    color: $main-color;
+    font-size: 20px;
+    line-height: 28.8px;
+    border-radius: 3px;
+    border: 2px solid $main-color;
+    transition: background-color, color, border .5s ease;
+}
+
+.aloha__mail:hover {
+    background-color: $main-color;
+    color: $body-color;
+    border: 2px solid $body-color;
+}
+
+.aloha__mail:active {
+    top: 2px;
+}
+
+.img-third img {
+    border-radius: 16px;
+    object-fit: contain;
+}

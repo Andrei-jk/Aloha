@@ -1,0 +1,92 @@
+.help {
+    max-width: 1320px;
+    font-size: 80px;
+    // font-weight: 400;
+    line-height: 100px;
+    margin: 0 40px 56px;
+}
+
+// .see {
+//     position: relative;
+//     display: inline-block;
+//     padding: 11px 17px 10px;
+//     color: $main-color;
+//     font-size: 20px;
+//     font-weight: 400;
+//     line-height: 28.8px;
+//     text-align: center;
+//     border-radius: 3px;
+//     border: 2px solid $main-color;
+//     transition: background, color, border, 0.5s ease;
+//     margin: 0 0 90px 40px;
+// }
+
+// .see:hover {
+//     background-color: $main-color;
+//     color: $body-color;
+//     border: 2px solid $body-color;
+// }
+
+// .see:active {
+//     top: 2px;
+// }
+.see {
+    position: relative;
+    display: inline-block;
+    padding: 11px 17px 10px;
+    font-size: 20px;
+    line-height: 28.8px;
+    text-align: center;
+    background-color: $body-color;
+    color: $main-color;
+    border-radius: 3px;
+    border: 2px solid $main-color;
+    // transition: background-color 0.3s ease;
+    // overflow: hidden;
+    margin: 0 0 90px 40px;
+}
+
+.see:before {
+    content: '*****';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(24, 167, 211, 0.5);
+    transform-origin: left;
+    transition: transform 0.9s ease;
+}
+
+.see:hover:before {
+    transform: translateX(100%) rotate(360deg);
+}
+
+.see span {
+    position: relative;
+    z-index: 2;
+}
+
+.see:after {
+    content: '✨ Скидка 50% ✨';
+    // Свойство content позволяет вставлять генерируемое содержание в текст веб-страницы, которое первоначально в тексте отсутствует. Применяется совместно с псевдоэлементами: after и:before, они соответственно указывают отображать новое содержимое после или до элемента, к которому добавляются.
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // translate Сдвигает элемент на заданное значение по горизонтали и вертикали. transform: translate(tx, ty)
+    color: #2231ff;
+    font-size: 16px;
+    font-weight: bold;
+    visibility: hidden;
+    // Предназначен для отображения или скрытия элемента,   включая рамку вокруг него и фон. При скрытии элемента,  хотя он и становится не виден, место, которое элемент занимает, остается за ним. Если предполагается вывод разных элементов в одно и то же место экрана, для обхода этой особенности следует использовать абсолютное позиционирование или воспользоваться свойством display.
+    // hidden Элемент становится невидимым или правильней сказать, полностью прозрачным, поскольку он продолжает участвовать в форматировании страницы.
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+.see:hover:after {
+    visibility: visible;
+    // visible Отображает элемент как видимый.
+    opacity: 1;
+}

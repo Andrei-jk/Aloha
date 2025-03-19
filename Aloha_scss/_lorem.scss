@@ -1,0 +1,57 @@
+.lorem {
+    margin: 0 auto 84px;
+    max-width: 1400px;
+    background: $main-color;
+    border-radius: 16px;
+}
+
+.note {
+    padding-top: 84px;
+    margin: 0 159px 45px 60px;
+    // анимация внутри текста
+    color: transparent;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 100px;
+    background-image: url(https://media.giphy.com/media/PU9ae3tuWoJCU/giphy.gif);
+    background-clip: text;
+
+}
+
+.caption {
+    color: $body-color;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36.4px;
+    padding: 0 0 110px 60px;
+    background-clip: text;
+    // обрезает фон по контуру текста
+}
+
+// =====================================
+
+.proba {
+    max-width: 1400px;
+    height: 476px;
+    background: #464040;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+}
+
+// .fff {
+//     display: inline;
+//     // background: #464040;
+//     font-size: 195px;
+//     color: rgb(243, 4, 4);
+//     font-weight: 800;
+//     transition: .5s;
+//     // background-clip: text;
+//     // обрезает фон по контуру текста
+// }
+
+// .fff:hover {
+//     -webkit-text-stroke: 1px rgb(243, 4, 4);
+//     color: transparent;
+// }

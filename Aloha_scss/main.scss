@@ -1,0 +1,41 @@
+@import"_header";
+@import"_patterns";
+@import"_reset";
+@import"_vars";
+@import"_creating";
+@import"_patterns";
+@import"_help";
+@import"_services";
+@import"_always";
+@import"_lorem";
+@import"_seem";
+@import"_footer";
+@import"_media1025";
+@import"_popup-logo";
+@import"_popup2";
+@import"_popup-contact";
+@import"_popupITDoctor";
+@import"_gallery";
+@import"_login-form";
+@import"_popup-gallery";
+
+* {
+    font-family: 'Poppins', sans-serif;
+    // background-color: $body-color;
+    color: $main-color;
+}
+
+.none {
+    display: none !important;
+}
+
+.container {
+    max-width: $main-container;
+    padding: 0 $padding-main-container;
+    margin: 0 auto;
+    // background-color: aquamarine;
+}
+
+
+
+

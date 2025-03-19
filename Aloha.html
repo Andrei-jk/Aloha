@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="icon" href="./Aloha_img/images.ico" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="Aloha_css/necolas.github.io_normalize.css_8.0.1_normalize.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="Aloha_css/main.css" />
+    <title>Aloha</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="closeLink" class="header">
+            <div class="container__header">
+                <div class="header__body-row">
+                    <a href="#openPopup" class="header__logo">
+                        <img src="Aloha_img/logo.svg" alt="">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__li">
+                                <!-- todo попапы ITDoctor на JS -->
+                                <a href="#!" data-modal-open-btn="modal1" class="header__link">Projects</a>
+                                <div data-modal-window id="modal1" class="modal__space hide">
+                                    <div class="modal__content-card">
+                                        <div class="modal__inner">
+                                            <div class="modal__title-zagolovok">Modal window from ITDoctor 1</div>
+                                            <a href="#!" data-modal-close-btn="closeBtn1"
+                                                class="modal__close-btn">&times;</a>
+                                        </div>
+                                        <p class="modal__card-content">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Voluptas tempore impedit
+                                            eum cum. Quaerat, culpa. Excepturi doloremque assumenda quasi? Fugiat,
+                                            quidem possimus deleniti explicabo
+                                            cum qui sint ipsa magnam commodi?</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__li">
+                                <a href="#!" data-modal-open-btn="modal2" class="header__link">About</a>
+                                <div data-modal-window id="modal2" class="modal__space hide">
+                                    <div class="modal__content-card">
+                                        <div class="modal__inner">
+                                            <div class="modal__title-zagolovok">Modal window from ITDoctor 2</div>
+                                            <a href="#!" data-modal-close-btn="closeBtn2"
+                                                class="modal__close-btn">&times;</a>
+                                        </div>
+                                        <p class="modal__card-content">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Voluptas tempore impedit
+                                            eum cum. Quaerat, culpa. Excepturi doloremque assumenda quasi? Fugiat,
+                                            quidem possimus deleniti explicabo
+                                            cum qui sint ipsa magnam commodi?</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__li">
+                                <a href="#!" data-modal-open-btn="modal3" class="header__link">Blog</a>
+                                <div data-modal-window id="modal3" class="modal__space hide">
+                                    <div class="modal__content-card">
+                                        <div class="modal__inner">
+                                            <div class="modal__title-zagolovok">Modal window from ITDoctor 3</div>
+                                            <a href="#!" data-modal-close-btn="closeBtn3"
+                                                class="modal__close-btn">&times;</a>
+                                        </div>
+                                        <p class="modal__card-content">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Voluptas tempore impedit eum cum. Quaerat, culpa.
+                                            Excepturi doloremque assumenda quasi? Fugiat, quidem possimus deleniti
+                                            explicabo cum qui sint ipsa magnam commodi?</p>
+                                    </div>
+                                </div>
+                                <!-- todo попап ITDoctor на JS -->
+                            </li>
+                            <li class="header__li">
+                                <a href="#!" id="open-modal" class="header__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- todo попап А.Дудукало на JS (на Contact) -->
+        <!-- вся затемненная модальная область -->
+        <div class="modal-area" id="modalContact">
+            <!-- чтобы popup можно было закрыть в любом месте экрана запишем ссылку -->
+            <a href="#" id="closeModalArea" class="close-area"></a>
+            <!-- само модальное окно -->
+            <div class="modal__window">
+                <!-- заголовок -->
+                <div class="zagolovok-window">Modal window for Contact</div>
+                <!-- кнопка закрытия окна -->
+                <button id="close-modal" class="triangle-up"></button>
+                <!-- контент -->
+                <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eos inventore est
+                    minima obcaecati animi fugiat aliquid repellat, libero et officiis consequuntur fugit non maiores
+                    odit eaque laboriosam! Similique, temporibus.
+                    Vel explicabo magni minima iste adipisci voluptatibus commodi sit dolores quibusdam. Dolorem, fuga
+                    iure. Nihil, hic! Accusantium cum architecto nisi totam odit, veritatis iure voluptate maiores quas
+                    consectetur eveniet aspernatur?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eos inventore est
+                    minima obcaecati animi fugiat aliquid repellat, libero et officiis consequuntur fugit non maiores
+                    odit eaque laboriosam! Similique, temporibus.
+                    Vel explicabo magni minima iste adipisci voluptatibus commodi sit dolores quibusdam. Dolorem, fuga
+                    iure. Nihil, hic! Accusantium cum architecto nisi totam odit, veritatis iure voluptate maiores quas
+                    consectetur eveniet aspernatur?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eos inventore est
+                    minima obcaecati animi fugiat aliquid repellat, libero et officiis consequuntur fugit non maiores
+                    odit eaque laboriosam! Similique, temporibus.
+                    Vel explicabo magni minima iste adipisci voluptatibus commodi sit dolores quibusdam. Dolorem, fuga
+                    iure. Nihil, hic! Accusantium cum architecto nisi totam odit, veritatis iure voluptate maiores quas
+                    consectetur eveniet aspernatur?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eos inventore est
+                    minima obcaecati animi fugiat aliquid repellat, libero et officiis consequuntur fugit non maiores
+                    odit eaque laboriosam! Similique, temporibus.
+                    Vel explicabo magni minima iste adipisci voluptatibus commodi sit dolores quibusdam. Dolorem, fuga
+                    iure. Nihil, hic! Accusantium cum architecto nisi totam odit, veritatis iure voluptate maiores quas
+                    consectetur eveniet aspernatur?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eos inventore est
+                    minima obcaecati animi fugiat aliquid repellat, libero et officiis consequuntur fugit non maiores
+                    odit eaque laboriosam! Similique, temporibus.
+                    Vel explicabo magni minima iste adipisci voluptatibus commodi sit dolores quibusdam. Dolorem, fuga
+                    iure. Nihil, hic! Accusantium cum architecto nisi totam odit, veritatis iure voluptate maiores quas
+                    consectetur eveniet aspernatur?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eos inventore est
+                    minima obcaecati animi fugiat aliquid repellat, libero et officiis consequuntur fugit non maiores
+                    odit eaque laboriosam! Similique, temporibus.
+                    Vel explicabo magni minima iste adipisci voluptatibus commodi sit dolores quibusdam. Dolorem, fuga
+                    iure. Nihil, hic! Accusantium cum architecto nisi totam odit, veritatis iure voluptate maiores quas
+                    consectetur eveniet aspernatur?</p>
+            </div>
+        </div>
+        <!-- todo попап А.Дудукало на JS (на Contact) -->
+        <!-- ============================ -->
+        <div class="content__page">
+            <p class="creating">
+                Creating purpose-built brands & websites
+            </p>
+            <div class="img-first">
+                <img src="./Aloha_img/IMAGE1.jpg" alt="img1">
+            </div>
+
+            <!-- ============================ -->
+
+            <p class="help">
+                I help emerging brands get their footing in today's digital world.
+            </p>
+
+            <!-- ============================ -->
+
+            <a href="#!" class="see">See my work</a>
+
+            <!-- ============================ -->
+            <!-- todo форма отправки и пароль on JS ====== -->
+            <div class="login__block">
+                <div class="login__form">
+                    <h2 class="signature">Login</h2>
+                    <div class="section">
+                        <input type="text" required="">
+                        <label for="">Name</label>
+                    </div>
+
+                    <div class="section">
+                        <input type="password" required="" id="mypassword">
+                        <label for="">Password</label>
+                    </div>
+
+                    <input type="checkbox" id="check" onclick="myPass()">
+                    <label for="check">Swow password</label>
+
+                    <input type="submit" value="submit">
+                </div>
+            </div>
+            <!--todo форма отправки и пароль on JS ======= -->
+
+            <section class="services">
+                <div class="services-row">
+                    <div class="img-second">
+                        <img class="img2" src="./Aloha_img/IMAGE2.jpg" alt="img2">
+                    </div>
+                    <div class="my-services">
+                        <p class="my">My services are perfect for companies that are just getting started</p>
+                        <a href="#!" class="learn">Learn more</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================ -->
+
+            <section class="always">
+                <div class="always-row">
+                    <div class="always-content">
+                        <p class="follow">I'm always on the go. Follow along!</p>
+                        <!-- Ссылка на адрес электронной почты
+                     Создание ссылки на адрес электронной почты делается почти также, как и ссылка на веб-страницу. Только вместо протокола http указывается mailto, после которого через двоеточие идёт сам адрес почты
+                        В атрибуте href элемента <a> вначале пишется ключевое слово mailto, затем через двоеточие желаемый почтовый адрес.
+                        Подобная ссылка по своему виду ничем не отличается от ссылки на веб-страницу, но при щелчке по ней запускается
+                        почтовая программа, установленная по умолчанию. Поэтому в названии ссылки желательно указывать, что она имеет отношение к электронной почте, чтобы читатели понимали, к чему приведёт щелчок по ней.
+                    
+                        Можно также автоматически добавить тему сообщения, присоединив к адресу электронной почты через символ вопроса (?)
+                        параметр subject с темой сообщения -->
+                        <a href="mailto:aloha.com?subject=Вопрос по HTML" class="aloha__mail">@aloha</a>
+                    </div>
+                    <div class="img-third">
+                        <!-- <img src="./Aloha_img/IMAGE3.jpg" alt="img3"> -->
+                        <img src="Aloha_img/IMAGE3.jpg" alt="img3">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================ -->
+
+            <div class="lorem">
+                <h1 class="note">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</h1>
+                <h3 class="caption">Full Name, CEO at Client</h3>
+
+            </div>
+
+            <!-- ============================ -->
+
+            <section class="seem">
+                <h2 class="seem__like">Seem like a good fit?</h2>
+                <!-- <button class="talk">Let's talk!</button> -->
+                <a href="#!" class="talk">Let's talk!</a>
+            </section>
+
+            <!-- ============================ -->
+            <!-- Галерея изображений с горизонтальной прокруткой using JS -->
+            <div class="controls">
+                <img src="Aloha_img/arrows-right.jpg" alt="left" id="leftBtn">
+
+                <div class="container__gallery">
+                    <div class="gallery">
+                        <span><img src="Aloha_img/IMAGE11.jpg"></span>
+                        <span><img src="Aloha_img/IMAGE2.jpg"></span>
+                        <span><img src="Aloha_img/IMAGE3.jpg"></span>
+                    </div>
+                    <div class="gallery">
+                        <span><img src="Aloha_img/Pink Floyd.jpg"></span>
+                        <span><img src="Aloha_img/Rod Stewart.jpg"></span>
+                        <span><img src="Aloha_img/travelworld44.jpg"></span>
+                    </div>
+                    <div class="gallery">
+                        <span><img src="Aloha_img/Dire Straits.jpg"></span>
+                        <span><img src="Aloha_img/Nazareth.jpg"></span>
+                        <span><img src="Aloha_img/Slade.jpg"></span>
+                    </div>
+                </div>
+                <img src="Aloha_img/arrows-right.jpg" alt="right" id="rightBtn">
+            </div>
+            <!-- Галерея изображений с горизонтальной прокруткой using JS -->
+            <!-- ============================ -->
+
+            <!-- todo Pop-Up Image Gallery CSS & JS -->
+            <div class="image-gallery">
+                <h1 class="gallery-zagolovok">Pop-Up Image Gallery CSS & JS</h1>
+                <div class="img-container">
+                    <div class="picture">
+                        <img src="Aloha_img/Slade.jpg" alt="Slade">
+                    </div>
+                    <div class="picture">
+                        <img src="Aloha_img/Dire Straits.jpg" alt="Dire Straits">
+                    </div>
+                    <div class="picture">
+                        <img src="Aloha_img/Nazareth.jpg" alt="Nazareth">
+                    </div>
+                    <div class="picture">
+                        <img src="Aloha_img/Pink Floyd.jpg" alt="Pink Floyd">
+                    </div>
+                    <div class="picture">
+                        <img src="Aloha_img/Rod Stewart.jpg" alt="Rod Stewart">
+                    </div>
+                    <div class="picture">
+                        <img src="Aloha_img/travelworld44.jpg" alt="travel">
+                    </div>
+                </div>
+                <div class="separate-popup">
+                    <span>&times;</span>
+                    <img class="separate-img" src="Aloha_img/Slade.jpg" alt="separate">
+                </div>
+            </div>
+            <!-- todo Pop-Up Image Gallery CSS & JS -->
+
+            <footer id="forClosePopup" class="footer">
+                <div class="footer__row">
+                    <div class="footer__webflow">
+                        <p class="footer__aloha">
+                            © Aloha
+                        </p>
+                        <p class="footer__power">
+                            Powered by Webflow
+                        </p>
+                        <a href="#forOpenPopup" class="palm">
+                            <img class="footer__palm" src="./Aloha_img/IMAGE palm.svg" alt="palm">
+                        </a>
+                    </div>
+                    <div class="footer__general">
+                        <ul class="footer__information">
+                            <li class="footer__li">
+                                <a class="footer__about" href="#!">About</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__contact" href="#!">Contact</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__licenses" href="#!">Licenses</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__style" href="#!">Style Guide</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__changelog" href="#!">Changelog</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__password" href="#!">Password</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__404" href="#!">404</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__homework">
+                            <li class="footer__li">
+                                <a class="footer__home1" href="#!">Home 1</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__home2" href="#!">Home 2</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__work1" href="#!">Work 1</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__work2" href="#!">Work 2</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__blog1" href="#!">Blog 1</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__blog2" href="#!">Blog 2</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__social-net">
+                            <li class="footer__li">
+                                <a class="footer__twitter" href="#!">Twitter</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__instagram" href="#!">Instagram</a>
+                            </li>
+                            <li class="footer__li">
+                                <a class="footer__facebook" href="#!">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- todo POPUP от Фрилансера =============================== -->
+    <div id="openPopup" class="popup__window">
+        <a href="#closeLink" class="close__any"></a>
+        <div class="popup__card">
+            <div class="content__card">
+                <a href="#closeLink" class="btn__close">close popup</a>
+                <div class="zagolovok">МОДАЛЬНОЕ ОКНО 1</div>
+                <div class="information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ut iure, debitis quo, nobis officia
+                    obcaecati quisquam consectetur quaerat reiciendis laudantium vel atque suscipit numquam aut
+                    repudiandae optio sed blanditiis?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ut iure, debitis quo, nobis officia
+                    obcaecati quisquam consectetur quaerat reiciendis laudantium vel atque suscipit numquam aut
+                    repudiandae optio sed blanditiis?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ut iure, debitis quo, nobis officia
+                    obcaecati quisquam consectetur quaerat reiciendis laudantium vel atque suscipit numquam aut
+                    repudiandae optio sed blanditiis?
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- todo POPUP =============================== -->
+    <!-- todo POPUP bottom ============================= -->
+    <div id="forOpenPopup" class="area__popup">
+        <a href="#forClosePopup" class="close__area"></a>
+        <div class="window__popup">
+            <div class="card__popup-content">
+                <a href="#forClosePopup" class="close__btn">close</a>
+                <div class="zagolovok__content">МОДАЛЬНОЕ ОКНО 2</div>
+                <div class="content__text">
+                    <img class="big__palm" src="./Aloha_img/IMAGE palm.svg" alt="palm">
+                    <p class="title">it's<br> time for the <br>sea</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- todo POPUP bottom ============================= -->
+
+
+
+    <!-- ============================ -->
+
+    <!-- 8. с сайта https://jquery.com/download/ в разделе Downloading jQuery using Bower копируем ссылку с последним обновлением (адрес = в данном случае bower install https://code.jquery.com/jquery-3.7.0.min.js )
+    9. подключаем в HTML эту ссылку = <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> (это подключение jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- также можно подключить через CDN = жмем Google CDN -> копируем Фрагмент 3.x:
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -> вставляем перед JS-->
+
+    <!-- проверка подключения jQuery 
+    <script>
+        console.log($);
+    </script> -->
+
+    <!-- ============================ -->
+
+    <script src="./Aloha_js/aloha.js"></script>
+</body>
+
+</html>
+
+<!-- ================================ -->
+
+<!-- Описание проекта 
+1. фиксированный (правильный) header
+2. -->

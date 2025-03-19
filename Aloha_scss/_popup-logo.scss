@@ -1,0 +1,78 @@
+//  todo POPUP от Фрилансера ================================
+.popup__window {
+    // вся затемненная область
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(75, 50, 29, 0.8);
+
+    // скрываем
+    opacity: 0;
+    visibility: hidden;
+
+    /* при большом кол контента надо дописать*/
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 1s ease;
+}
+
+// по сути это кнопка
+.popup__window:target {
+    // показываем
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__window:target .content__card {
+    // когда .content__card в .popup__window при :target т е .popup__window: target кликнули на открытие
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+
+.close__any {
+    // чтобы popup можно было закрыть в любом месте экрана запишем и тогда ссылкой будет вся popup__window
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup__card {
+    // окно popup (оно почти на всю затемненную область)
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.content__card {
+    // контент карточки, который ограничен
+    position: relative;
+    background-color: $body-color;
+    color: $main-color;
+    max-width: 800px;
+    padding: 30px;
+    transition: all 1s ease;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -150%) rotateX(45deg);
+}
+
+.btn__close {
+    // кнопка закрытия
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.zagolovok {
+    font-size: 40px;
+    margin: 0 0 1em 0;
+    font-weight: 700;
+}
+
+//  todo POPUP ================================
